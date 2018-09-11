@@ -2,7 +2,7 @@
     "InitList": {
         "google": {
             "name": "google",
-            "src": "https://maps.googleapis.com/maps/api/js?libraries=places,geometry,drawing&",    
+            "src": "https://maps.googleapis.com/maps/api/js?libraries=places,geometry,drawing&callback=APILoaded&",   
             "key": "AIzaSyCb2GKOwMmvcseTS2hbQ_2TFbJKVTA1WBo",
             "language": "ru",
             "version":"3.30"
