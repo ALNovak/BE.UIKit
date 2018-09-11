@@ -24,8 +24,14 @@ export class Initialize implements InitMap {
                 };
             } else {
                 script.onload = () => {
-                    resolve({ loaded: true, status: 'Loaded' });
+                  //  resolve({ loaded: true, status: 'Loaded' });
                 };
+													
+													  window['APILoaded'] = (ev) => {
+                    console.log('google maps api loaded');
+                    //resolve(window['google']['maps']);
+                    resolve({ loaded: true, status: 'Loaded' });
+                }
             }
             script.onerror = (error: any) => {
                 reject({ loaded: false, status: 'Error' });
